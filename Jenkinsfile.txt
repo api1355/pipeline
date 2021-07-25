@@ -5,12 +5,12 @@ stages
 {
     stage('Build') { 
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                sh 'javac Home.java' 
             }
         }
     stage('Compile') { 
             steps {
-                sh 'Compiled' 
+                sh 'java Home' 
             }
         }
 }
