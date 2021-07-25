@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    
+    stage('Build') { 
+            steps {
+                sh 'mvn -B -DskipTests clean package' 
+            }
+        }
+    }
+    stage('Compile Stage') { 
+            steps {
+                sh 'Compiled' 
+            }
+        }
+    }
+}
