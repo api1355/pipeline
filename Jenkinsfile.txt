@@ -5,12 +5,12 @@ stages
 {
     stage('Build') { 
             steps {
-                sh 'javac Home.java' 
+                bat 'javac Home.java' 
             }
         }
     stage('Compile') { 
             steps {
-                sh 'java Home' 
+                bat 'java Home' 
             }
         }
 }
